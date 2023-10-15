@@ -69,3 +69,6 @@ body {
         line-height: 2;
     }
 }
+.finish {
+    pointer-events: none;
+}
