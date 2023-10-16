@@ -1,3 +1,4 @@
+let gameContainer = document.querySelector(".game")
 let title = document.querySelector(".title")
 let turn = 'X'
 let squares = [];
@@ -49,9 +50,8 @@ function winner() {
 }
 
 function end(num1, num2, num3) {
-    let game = document.querySelector(".game")
     game.classList.add("finish")
-    title.innerHTML = `${squares[1]} Winner`
+    title.innerHTML = `${squares[num1]} Winner`
     document.getElementById('item' + num1).style.backgroundColor = "black"
     document.getElementById('item' + num2).style.backgroundColor = "black"
     document.getElementById('item' + num3).style.backgroundColor = "black"
