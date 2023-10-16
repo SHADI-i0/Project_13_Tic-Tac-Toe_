@@ -50,7 +50,7 @@ function winner() {
 }
 
 function end(num1, num2, num3) {
-    game.classList.add("finish")
+    gameContainer.classList.add("finish")
     title.innerHTML = `${squares[num1]} Winner`
     document.getElementById('item' + num1).style.backgroundColor = "black"
     document.getElementById('item' + num2).style.backgroundColor = "black"
